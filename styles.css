@@ -1,0 +1,90 @@
+h1 {
+    text-align: center;
+    background-position: fixed;
+}
+
+body {
+    background-image: url('blue-sky-bg.jpg');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+
+#calculatorbody {
+    width: 450px;
+    height: 580px;
+    min-width: 200px;
+    min-height: 550px;
+    background-color: rgb(91, 146, 132);
+    text-align: center;
+    padding: 3px;
+    border: 5px solid black;
+    margin: 0 auto;
+}
+
+#container {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    min-width: 500px;
+}
+
+#textDisplay {
+    text-align: right;
+    text-shadow: darkslategray;
+    font-size: 65px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 15px;
+    border: 1px solid black;
+    width: 420px;
+    height: 80px;
+    min-width: 180px;
+    min-height: 80px;
+    background-color: #68b899
+    
+    
+}
+
+.itemclr { grid-area: clr; }
+.itemback { grid-area: back; }
+.item9 { grid-area: nine; }
+.item8 { grid-area: eight; }
+.item7 { grid-area: seven; }
+.item1 { grid-area: one; }
+.item2 { grid-area: two; }
+.item3 { grid-area: three; }
+.item4 { grid-area: four; }
+.item5 { grid-area: five; }
+.item6 { grid-area: six; }
+.itemplus { grid-area: plus; }
+.itemminus { grid-area: minus; }
+.item0 { grid-area: zer; }
+.itementer { grid-area: enter; }
+.itemmultiply { grid-area: mult; }
+.itemdivide { grid-area: divide; }
+
+.grid-container {
+    display: grid;
+    font-size: 30px;
+    grid-gap: 50px;
+    grid-template-areas:
+    'clr clr back plus'
+    'seven eight nine minus'
+    'four five six mult'
+    'one two three divide'
+    'zer enter enter enter'
+   
+  }
+
+
+  /*
+   clr <- /
+  123  +
+  456   -
+  789   *
+   0  .    =
+
+
+
+
+  /*
